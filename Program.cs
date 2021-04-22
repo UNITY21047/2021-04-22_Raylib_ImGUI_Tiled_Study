@@ -1,12 +1,24 @@
-﻿using System;
+﻿using Raylib_cs;
 
-namespace _2021_04_22_Raylib_ImGUI_Tiled_Study
+namespace HelloWorld
 {
-    class Program
+    static class Program
     {
-        static void Main(string[] args)
+        public static void Main()
         {
-            Console.WriteLine("Hello World!");
+            Raylib.InitWindow(800, 480, "Hello World");
+
+            while (!Raylib.WindowShouldClose())
+            {
+                Raylib.BeginDrawing();
+                Raylib.ClearBackground(Color.WHITE);
+
+                Raylib.DrawText("Hello, world!", 12, 12, 20, Color.BLACK);
+
+                Raylib.EndDrawing();
+            }
+
+            Raylib.CloseWindow();
         }
     }
 }
