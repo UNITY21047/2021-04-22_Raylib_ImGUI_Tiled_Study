@@ -1,4 +1,5 @@
 ﻿using Raylib_cs;
+using System;
 
 namespace HelloWorld
 {
@@ -6,7 +7,7 @@ namespace HelloWorld
     {
         public static void Main()
         {
-            Raylib.InitWindow(800, 480, "Hello World");
+            Raylib.InitWindow(480, 480, String.Empty);
 
             while (!Raylib.WindowShouldClose())
             {
