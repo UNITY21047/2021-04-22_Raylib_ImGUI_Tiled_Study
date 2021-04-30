@@ -8,6 +8,7 @@ namespace HelloWorld
 {
     static class Program
     {
+        
         public static void Main()
         {
             int screen_width = 480;

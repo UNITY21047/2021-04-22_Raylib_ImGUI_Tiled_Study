@@ -1,6 +1,9 @@
-[ ] Load default texture file name. 
-[ ] Default float position. 
-[ ] A list of animation texture file names.
-[ ] A list of animation texture float positions. 
-[ ] A list of class types or just a specific type.
-[ ] Shader type.
+Constructing The Game Object:
+    [X] Load default texture file name. 
+    [X] Default float position. 
+    [X] A list of animation texture file names.
+    [X] A list of animation texture float positions. 
+    [X] A list of class types or just a specific type.
+    [ ] Shader type.
+
+Construct Determinate Object Draw Structure:
