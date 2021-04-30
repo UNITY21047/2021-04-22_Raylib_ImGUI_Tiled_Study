@@ -1,0 +1,1 @@
+[ ] Load default texture file name, default float position, a list of animation texture file names, a list of animation texture float positions, class type, and shader type.
