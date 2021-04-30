@@ -1,1 +1,6 @@
-[ ] Load default texture file name, default float position, a list of animation texture file names, a list of animation texture float positions, class type, and shader type.
+[ ] Load default texture file name. 
+[ ] Default float position. 
+[ ] A list of animation texture file names.
+[ ] A list of animation texture float positions. 
+[ ] A list of class types or just a specific type.
+[ ] Shader type.
