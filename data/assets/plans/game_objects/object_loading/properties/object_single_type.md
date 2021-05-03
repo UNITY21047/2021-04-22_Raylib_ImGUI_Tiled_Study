@@ -28,5 +28,7 @@ graph LR
     _1.6 --> _2
 ```
 Notes:
+
 1.2 - texture name and position in image.
+
 1.5 - position in object_list
