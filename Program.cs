@@ -32,7 +32,7 @@ namespace HelloWorld
             //        gl_FragColor = vec4(1.0, 1.0, 1.0, 1.0);
             //    }"
             //);
-            Shader test_shader = LoadShader(@"/media/pup/storage_1/assets/projects/2021-04-22_Raylib_ImGUI_Tiled_Study/test_shader.vert", @"/media/pup/storage_1/assets/projects/2021-04-22_Raylib_ImGUI_Tiled_Study/test_shader.frag");
+            Shader test_shader = LoadShader(@"../2021-04-22_Raylib_ImGUI_Tiled_Study/test_shader.vert", @"../2021-04-22_Raylib_ImGUI_Tiled_Study/test_shader.frag");
 
             SetTargetFPS(60);
 
