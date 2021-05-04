@@ -4,6 +4,8 @@ Constructing The Game Object:
     [X] A list of animation texture file names.
     [X] A list of animation texture float positions. 
     [X] A list of class types or just a specific type.
+
+Extra - Add Shader Functionality:
     [ ] Shader type.
 
 Construct Determinate Object Draw Structure:
