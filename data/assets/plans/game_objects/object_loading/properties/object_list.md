@@ -2,8 +2,8 @@
 graph LR
     _1[input]
 
-    subgraph List-OBJECT-LIST
-        _1.1[struct-OBJECT]
+    subgraph List-object_list
+        _1.1[struct-object]
     end
 
     _1 --> _1.1

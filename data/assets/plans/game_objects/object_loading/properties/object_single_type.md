@@ -2,13 +2,14 @@
 graph LR
     _1[input]
 
-    subgraph struct-OBJECT_SINGLE_TYPE
+    subgraph struct-object_SINGLE_TYPE
         _1.1[string_file_name]
         _1.2[dictionary_texture_positions]
         _1.3[string_name]
         _1.4[float_global_position_in_world]
-        _1.5[int_position_in_list]
-        _1.6[list_object_classes]
+        _1.5
+        _1.6[int_position_in_list]
+        _1.7[list_object_classes]
 
     end
 
@@ -18,6 +19,7 @@ graph LR
     _1 --> _1.4
     _1 --> _1.5
     _1 --> _1.6
+    _1 --> _1.7
 
     _2[out]
     _1.1 --> _2
