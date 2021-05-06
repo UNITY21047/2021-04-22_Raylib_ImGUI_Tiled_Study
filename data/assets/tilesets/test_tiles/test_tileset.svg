@@ -18,12 +18,57 @@
      id="defs2">
     <marker
        style="overflow:visible"
-       id="marker1602"
+       id="marker1315"
        refX="0.0"
        refY="0.0"
        orient="auto"
        inkscape:stockid="Arrow2Lstart"
        inkscape:isstock="true">
+      <path
+         transform="scale(1.1) translate(1,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         id="path1313" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker1149"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lstart"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         transform="scale(1.1) translate(1,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         id="path1147" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker1021"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lstart"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         transform="scale(1.1) translate(1,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         id="path1019" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker1602"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lstart"
+       inkscape:isstock="true"
+       inkscape:collect="always">
       <path
          transform="scale(1.1) translate(1,0)"
          d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
@@ -110,9 +155,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8284271"
-     inkscape:cx="165.88454"
-     inkscape:cy="113.80952"
+     inkscape:zoom="0.99999999"
+     inkscape:cx="438.51417"
+     inkscape:cy="120.34955"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -157,7 +202,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -167,83 +212,162 @@
      id="layer1">
     <path
        id="path14"
-       style="fill:#ffff00;fill-rule:evenodd;stroke-width:0.264583"
+       style="fill:#ffff00;fill-rule:evenodd;stroke-width:0.204472"
        inkscape:transform-center-x="0.66787352"
        inkscape:transform-center-y="1.7182254"
-       transform="matrix(1.0296962,0.24282985,-0.20651773,0.53130382,-12.11996,-27.803717)"
-       d="M 23.325223,57.612163 27.930981,39.565387 42.992567,32.681561 53.453454,43.8422 48.847987,61.87665 33.786401,68.760476 Z"
+       d="m 33.866669,25.403239 8.469511,-8.469905 16.93049,-10e-7 8.466666,8.469906 -8.466666,8.463427 -16.93049,10e-7 z"
        sodipodi:nodetypes="ccccccc" />
     <rect
        style="fill:#0000ff;fill-opacity:0.207577;fill-rule:evenodd;stroke-width:0.187088"
        id="rect16"
        width="33.866665"
        height="16.933332"
-       x="4.1235376e-07"
-       y="0" />
+       x="33.866669"
+       y="16.933334" />
+    <path
+       id="path1277"
+       style="fill:#ffcc00;fill-rule:evenodd;stroke-width:0.204472"
+       inkscape:transform-center-x="0.66787352"
+       inkscape:transform-center-y="1.7182254"
+       d="m 101.60001,42.336571 8.46951,-8.469906 h 16.93049 l 8.46667,8.469906 -8.46667,8.463428 h -16.93049 z"
+       sodipodi:nodetypes="ccccccc" />
     <path
        id="path962"
        style="fill:#ffff00;fill-rule:evenodd;stroke-width:0.204472"
        inkscape:transform-center-x="0.66787352"
        inkscape:transform-center-y="1.7182254"
-       d="m 25.400001,16.933333 8.469511,-8.4699056 16.93049,-4e-7 8.466666,8.469906 -8.466666,8.463427 h -16.93049 z"
+       d="m 33.866669,42.336572 8.469511,-8.469905 h 16.93049 l 8.466666,8.469905 -8.466666,8.463427 H 42.33618 Z"
        sodipodi:nodetypes="ccccccc" />
     <path
        id="path964"
-       style="fill:#ccff00;fill-rule:evenodd;stroke-width:0.20452292;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       style="fill:#ccff00;fill-opacity:0.193141;fill-rule:evenodd;stroke-width:0.204523;stroke-miterlimit:4;stroke-dasharray:none"
        inkscape:transform-center-x="0.66787352"
        inkscape:transform-center-y="1.7182254"
-       d="m 25.397156,0.00647838 8.469511,-8.46990558 16.93049,-4e-7 8.466666,8.46990598 -8.466666,8.46342702 h -16.93049 z"
+       d="m 59.263823,25.403239 8.469511,-8.469906 h 16.93049 l 8.466666,8.469906 -8.466666,8.463427 h -16.93049 z"
        sodipodi:nodetypes="ccccccc" />
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.079375;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow2Lstart);stroke-miterlimit:4;stroke-dasharray:none"
-       d="M -6.21725,-8.2938675 0,0"
-       id="path1368"
-       inkscape:connector-type="polyline"
-       inkscape:connector-curvature="0" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:1.05833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="-12.610579"
-       y="-9.3003283"
-       id="text1426"><tspan
-         sodipodi:role="line"
-         id="tspan1424"
-         x="-12.610579"
-         y="-9.3003283"
-         style="font-size:1.05833px;stroke-width:0.264583">(0, 0):A starting point.</tspan></text>
+       style="fill:#ffeeaa;fill-opacity:0.405521;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 59.266669,25.403238 8.466665,8.463428 h 16.930489 l 8.466664,-8.463427 3e-6,8.469904 -8.466667,8.463428 H 67.733334 l -8.46951,-8.463428 z"
+       id="path1279" />
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.079375;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#marker1440);stroke-miterlimit:4;stroke-dasharray:none"
-       d="M 16.323204,-9.0754209 8.4695108,0"
-       id="path1430"
-       inkscape:connector-type="polyline"
-       inkscape:connector-curvature="0" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:1.05833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="10.594172"
-       y="-9.6147108"
-       id="text1588"><tspan
-         sodipodi:role="line"
-         id="tspan1586"
-         x="10.594172"
-         y="-9.6147108"
-         style="font-size:1.05833px;stroke-width:0.264583">The tile has divisions of 32 horizontally.</tspan></text>
+       id="path964-0"
+       style="fill:#ccff00;fill-opacity:1;fill-rule:evenodd;stroke-width:0.204523;stroke-miterlimit:4;stroke-dasharray:none"
+       inkscape:transform-center-x="0.66787352"
+       inkscape:transform-center-y="1.7182254"
+       d="m 101.60001,25.403239 8.46951,-8.469906 h 16.93049 l 8.46666,8.469906 -8.46666,8.463426 h -16.93049 z"
+       sodipodi:nodetypes="ccccccc" />
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.079375;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-start:url(#marker1602)"
-       d="M -14.015435,3.7367604 0,8.4699053"
-       id="path1592"
-       inkscape:connector-type="polyline"
-       inkscape:connector-curvature="0" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:1.05833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="-26.485512"
-       y="3.9581046"
-       id="text1654"><tspan
-         sodipodi:role="line"
-         id="tspan1652"
-         x="-26.485512"
-         y="3.9581046"
-         style="font-size:1.05833px;stroke-width:0.264583">The tile also has divisions of 32 vertically.</tspan></text>
+       style="fill:#ffeeaa;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 101.60285,25.403237 8.46667,8.463428 h 16.93049 l 8.46665,-8.463427 v 8.469904 l -8.46665,8.463427 h -16.93049 l -8.46951,-8.463427 z"
+       id="path1279-1" />
+    <g
+       id="g1821"
+       transform="translate(33.866669,16.933333)">
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.0687408;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker1149)"
+         d="M 25.400001,0 H 0"
+         id="path1139"
+         inkscape:connector-type="polyline"
+         inkscape:connector-curvature="0" />
+      <g
+         id="g1674">
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.079375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow2Lstart)"
+           d="M -6.21725,-8.2938675 0,0"
+           id="path1368"
+           inkscape:connector-type="polyline"
+           inkscape:connector-curvature="0" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:1.05833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+           x="-12.610579"
+           y="-9.3003283"
+           id="text1426"><tspan
+             sodipodi:role="line"
+             id="tspan1424"
+             x="-12.610579"
+             y="-9.3003283"
+             style="font-size:1.05833px;stroke-width:0.264583">(0, 0):A starting point.</tspan></text>
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.079375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker1440)"
+           d="M 16.323204,-9.0754209 8.4695108,0"
+           id="path1430"
+           inkscape:connector-type="polyline"
+           inkscape:connector-curvature="0" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:1.05833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+           x="10.594172"
+           y="-9.6147108"
+           id="text1588"><tspan
+             sodipodi:role="line"
+             id="tspan1586"
+             x="10.594172"
+             y="-9.6147108"
+             style="font-size:1.05833px;stroke-width:0.264583">The tile has divisions of 32 horizontally.</tspan></text>
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.079375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker1602)"
+           d="M -14.015435,3.7367604 0,8.4699053"
+           id="path1592"
+           inkscape:connector-type="polyline"
+           inkscape:connector-curvature="0" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:1.05833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+           x="-26.485512"
+           y="3.9581046"
+           id="text1654"><tspan
+             sodipodi:role="line"
+             id="tspan1652"
+             x="-26.485512"
+             y="3.9581046"
+             style="font-size:1.05833px;stroke-width:0.264583">The tile also has divisions of 32 vertically.</tspan></text>
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.0916485;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker1021)"
+           d="M 25.400003,33.866666 25.400001,-2.0141203e-7"
+           id="path152"
+           inkscape:connector-type="polyline"
+           inkscape:connector-curvature="0" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:1.05833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+           x="31.297544"
+           y="35.212318"
+           id="text1133"><tspan
+             sodipodi:role="line"
+             id="tspan1131"
+             x="31.297544"
+             y="35.212318"
+             style="font-size:1.05833px;stroke-width:0.264583">Every &quot;y&quot; unit is shift 64 px.</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:1.05833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+           x="25.722048"
+           y="0.28686023"
+           id="text1137"><tspan
+             sodipodi:role="line"
+             x="25.722048"
+             y="0.28686023"
+             style="font-size:1.05833px;stroke-width:0.264583"
+             id="tspan1253">Every &quot;x&quot; unit is shift 96 px.</tspan></text>
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.079375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker1315)"
+           d="M 117.64386,17.757837 95.457951,17.866762"
+           id="path1305"
+           inkscape:connector-type="polyline"
+           inkscape:connector-curvature="0" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:1.05833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+           x="118.13441"
+           y="18.056959"
+           id="text1427"><tspan
+             sodipodi:role="line"
+             x="118.13441"
+             y="18.056959"
+             style="font-size:1.05833px;stroke-width:0.264583"
+             id="tspan1425">Tile must be labeled so that it can be shifted 32px units from the elevated tile s</tspan></text>
+      </g>
+    </g>
   </g>
 </svg>
