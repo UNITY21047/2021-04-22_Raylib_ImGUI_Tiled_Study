@@ -1,0 +1,13 @@
+https://www.khronos.org/opengl/wiki/Data_Type_(GLSL)
+
+https://github.com/dfranx/SHADERed //Shader generating program
+
+https://github.com/CBGonzalez/SIMDIntro //Using "Vector<T>"s In C#
+
+https://docs.microsoft.com/en-us/dotnet/api/system.numerics.vector-1.-ctor?view=net-5.0#System_Numerics_Vector_1__ctor_System_Span__0__ //Vector<T> In Microsoft documentation.
+
+https://www.c-sharpcorner.com/article/event-handling-in-net-using-C-Sharp/ //Using Delegates and EventHandlers.
+
+https://docs.microsoft.com/en-us/dotnet/standard/events/ //Also on using event handlers.
+
+https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2?view=net-5.0 //Dictionary Microsoft documentation. 

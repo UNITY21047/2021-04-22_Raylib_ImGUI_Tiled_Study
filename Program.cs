@@ -4,11 +4,14 @@ using Raylib_cs;
 using static Raylib_cs.Raylib;
 using static Raylib_cs.Color;
 
-namespace HelloWorld
+namespace _2021_04_22_Raylib_ImGUI_Tiled_Study
 {
     static class Program
     {
-        
+        struct PLAYER_DATA
+        {
+            
+        }
         public static void Main()
         {
             int screen_width = 480;

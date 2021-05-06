@@ -1,2 +1,0 @@
-https://www.khronos.org/opengl/wiki/Data_Type_(GLSL)
-https://github.com/dfranx/SHADERed //Shader generating program
