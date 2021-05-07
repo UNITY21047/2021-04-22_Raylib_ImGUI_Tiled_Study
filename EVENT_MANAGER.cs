@@ -1,6 +1,8 @@
-    using System;
-    using System.Collections.Generic;
-    
+using System;
+using System.Collections.Generic;
+
+namespace _2021_04_22_Raylib_ImGUI_Tiled_Study
+{
     public delegate void EVENT_HANDLER(object sender, STRING_EVENT_ARGUMENTS e);
 
     public class STRING_EVENT_ARGUMENTS : EventArgs  
@@ -22,7 +24,6 @@
         public EVENT_MANAGER(List<EVENT_HANDLER> events, int event_count)
         {
             STRING_EVENT_ARGUMENTS EVENT_HANDLER_1 = new STRING_EVENT_ARGUMENTS();   
-
             HANDLER = events;
             COUNT = event_count;
 
@@ -42,7 +43,6 @@
                     EVENT -= HANDLER[i - 1];
                     EVENT += HANDLER[i];
                 }
-
                 EVENT_HANDLER_1.STATEMENT = "Event args for event" + i;  
                 ON_CALL(EVENT_HANDLER_1);
             }   
@@ -56,21 +56,4 @@
             }  
         }
     }
-
-    public class main  
-    {
-        List<EVENT_HANDLER> LIST_OF_HANDLERS = new List<EVENT_HANDLER>();
-        LIST_OF_HANDLERS.Add(new EVENT_HANDLER(ON_EVENT_1));
-        LIST_OF_HANDLERS.Add(new EVENT_HANDLER(ON_EVENT_2));
-        EVENT_MANAGER MAIN = new EVENT_MANAGER(LIST_OF_HANDLERS, LIST_OF_HANDLERS.Count);
-    
-
-        public static void ON_EVENT_1(object sender, STRING_EVENT_ARGUMENTS e)  
-        {  
-            Console.WriteLine("Testing the handler 1: {0}", e.STATEMENT);  
-        }
-        public static void ON_EVENT_2(object sender, STRING_EVENT_ARGUMENTS e)  
-        {  
-            Console.WriteLine("Besting the handler 1: {0}", e.STATEMENT);  
-        }
-    }  
+}

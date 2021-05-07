@@ -1,10 +1,11 @@
 using System;
 using System.Numerics;
 using System.Collections.Generic;
+using Raylib_cs;
 
 namespace _2021_04_22_Raylib_ImGUI_Tiled_Study
 {
-    public class OBJECT : SKILL_EVENTS
+    public class OBJECT
     {
         String FILE_NAME;
         Dictionary<Vector2, int> TEXTURE_DATA_PAIR; //texture_position, texture_name
