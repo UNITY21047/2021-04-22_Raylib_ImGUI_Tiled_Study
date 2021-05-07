@@ -1,43 +1,53 @@
     using System;
+    using System.Collections.Generic;
     
-    public delegate void MyHandler1(object sender, MyEventArgs e);   
+    public delegate void EVENT_HANDLER(object sender, STRING_EVENT_ARGUMENTS e);
 
-    public class MyEventArgs : EventArgs  
+    public class STRING_EVENT_ARGUMENTS : EventArgs  
     {  
-        public string m_id;  
+        public string STATEMENT;  
     }
 
-    public class main
+    public class INT_EVENT_ARGUMENTS : EventArgs  
+    {  
+        public int STATEMENT;  
+    }
+
+    public class EVENT_MANAGER
     {
-        public static event MyHandler1 Event1;
-        public main()
+        public event EVENT_HANDLER EVENT;
+        List<EVENT_HANDLER> HANDLER;
+        public EVENT_MANAGER(List<EVENT_HANDLER> events)
         {
-            MyHandler1 d1 = new MyHandler1(OnHandler1);
-            Event1 += d1;  
-            MyEventArgs e1 = new MyEventArgs();   
-            e1.m_id = "Event args for event 1";  
-            this.FireEvent1(e1);
+            STRING_EVENT_ARGUMENTS EVENT_HANDLER_1 = new STRING_EVENT_ARGUMENTS();   
+            EVENT_HANDLER_1.STATEMENT = "Event args for event 1";  
+
+            this.ON_EVENT(EVENT_HANDLER_1);
+            HANDLER = events;
+
+            foreach(var item in HANDLER)
+            {
+                EVENT += item;
+            } 
         }
 
-        public void FireEvent1(MyEventArgs e)  
+        public void ON_EVENT(STRING_EVENT_ARGUMENTS e)  
         {  
-            if (Event1 != null)  
+            if (EVENT != null)  
             {  
-                Event1(this, e);  
+                EVENT(this, e);  
             }  
         }
-
-        public void OnHandler1(object sender, MyEventArgs e)  
-        {  
-            Console.WriteLine("I am in OnHandler1 and MyEventArgs is {0}", e.m_id);  
-        }
     }
-    public class Driver  
-    {  
-        public static event MyHandler1 Event1;
-
+    public class main  
+    {
         static void Main()  
         {  
-            main MAIN = new main();  
-        }  
+            EVENT_MANAGER MAIN = new EVENT_MANAGER(); 
+        }
+
+        public void ON_EVENT(object sender, STRING_EVENT_ARGUMENTS e)  
+        {  
+            Console.WriteLine("I am in OnHandler1 and EVENT_ARGUMENTS is {0}", e.STATEMENT);  
+        }
     }  
