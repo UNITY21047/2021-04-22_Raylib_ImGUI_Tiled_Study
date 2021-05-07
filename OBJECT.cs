@@ -12,8 +12,7 @@ namespace _2021_04_22_Raylib_ImGUI_Tiled_Study
         float GLOBAL_POSITION;
         int LIST_POSITION;
         //Dictionary<SKILL_EVENT_ARGUMENTS, String> OBJECT_SKILLS; //SKILL_EVENT_ARGUMENTS, SKILL_NAME
-        //List<> OBJECT_EVENTS;
-        bool MULTIPLE_TEXTURES;
+        //List<> OBJECT_EVENTS;the 
 
         public OBJECT(String file_name, Dictionary<Vector2, int> texture_data_pair, float global_postion, int list_position, bool multiple_textures)
         {
