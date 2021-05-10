@@ -43,6 +43,7 @@ namespace _2021_04_22_Raylib_ImGUI_Tiled_Study
                 if (IsKeyDown(Raylib_cs.KeyboardKey.KEY_LEFT)) ball_postion.X -= 2.0f;
                 if (IsKeyDown(Raylib_cs.KeyboardKey.KEY_UP)) ball_postion.Y -= 2.0f;
                 if (IsKeyDown(Raylib_cs.KeyboardKey.KEY_DOWN)) ball_postion.Y += 2.0f;
+                if ((IsKeyDown(Raylib_cs.KeyboardKey.KEY_LEFT_CONTROL) || IsKeyDown(Raylib_cs.KeyboardKey.KEY_LEFT_CONTROL)) && IsKeyDown(Raylib_cs.KeyboardKey.KEY_Q)) break;
 
                 BeginDrawing();
 
