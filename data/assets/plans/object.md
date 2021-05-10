@@ -1,3 +1,6 @@
+Goal:
+    Create a draw method that actives events and then draws the textures based on the events.****
+
 OBJECT:
 
 Properties -
