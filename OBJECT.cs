@@ -9,64 +9,28 @@ namespace _2021_04_22_Raylib_ImGUI_Tiled_Study
     public class OBJECT
     {
         //Genreal Data
-        private String file_name;
-        public String FILE_NAME
-        {
-            get{ return file_name; } 
-            set{ file_name = value; }
-        }
+        public String FILE_NAME{ get;set; }
 
-        private String object_name;
-        public String OBJECT_NAME
-        {
-            get
-            {
-                return object_name;
-            }
-            set
-            {
-                object_name = value;
-            }
-        }
+        public String OBJECT_NAME{ get;set; }
 
-        private String shape_name;
-        public String SHAPE_NAME
-        {
-            get
-            {
-                return shape_name;
-            }
-            set
-            {
-                shape_name = value;
-            }
-        }
+        public String SHAPE_NAME{ get;set; }
 
         //texture_position, texture_name
-        private Dictionary<Vector2, int> texture_data_pair;
-        public Dictionary<Vector2, int> TEXTURE_DATA_PAIR
-        {
-            get
-            {
-                return texture_data_pair;
-            }
-            set
-            {
-                texture_data_pair = value;
-            }
-        }
+        
+        public Dictionary<Vector2, int> TEXTURE_DATA_PAIR{ get;set; }
 
-        float GLOBAL_POSITION;
-        int LAYER_POSITION;
+        public float GLOBAL_POSITION{ get;set; }
 
-        //Dictionary<SKILL_EVENT_ARGUMENTS, String> OBJECT_SKILLS; //SKILL_EVENT_ARGUMENTS, SKILL_NAME
+        public int LAYER_POSITION{ get;set; }
+
+        public Dictionary<SKILL_EVENT_ARGUMENTS, String> OBJECT_SKILLS{ get;set; } //SKILL_EVENT_ARGUMENTS, SKILL_NAME
         //List<> OBJECT_EVENTS;the
 
-        bool MULTIPLE_TEXTURES;
+        public bool MULTIPLE_TEXTURES;
 
         public void SET_OBJECT_PROPERTIES(String file_name, String object_name, Dictionary<Vector2, int> texture_data_pair, float global_postion, int list_position, bool multiple_textures)
         {
-            this.FILE_NAME = file_name;
+            FILE_NAME = file_name;
             OBJECT_NAME = object_name;
             TEXTURE_DATA_PAIR = texture_data_pair;
             GLOBAL_POSITION = global_postion;

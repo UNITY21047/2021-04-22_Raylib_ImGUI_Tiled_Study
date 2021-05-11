@@ -5,3 +5,6 @@ main:
 
 run: main
 	${COMPILER} run
+
+rest:
+	${COMPILER} restore
