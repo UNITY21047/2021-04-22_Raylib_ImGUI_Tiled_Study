@@ -23,7 +23,7 @@ namespace _2021_04_22_Raylib_ImGUI_Tiled_Study
 
         public int LAYER_POSITION{ get;set; }
 
-        public Dictionary<SKILL_EVENT_ARGUMENTS, String> OBJECT_SKILLS{ get;set; } //SKILL_EVENT_ARGUMENTS, SKILL_NAME
+        public Dictionary<EventArgs, String> OBJECT_SKILLS{ get;set; } //SKILL_EVENT_ARGUMENTS, SKILL_NAME
         //List<> OBJECT_EVENTS;the
 
         public bool MULTIPLE_TEXTURES;
