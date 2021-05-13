@@ -17,8 +17,6 @@ namespace _2021_04_22_Raylib_ImGUI_Tiled_Study
 
             Vector2 ball_postion = new Vector2((float)screen_width/2, (float)screen_height/2);
 
-            S_OBJECT_LIST.LOAD_OBJECTS();
-
             //Colors: {"Deep Space Sparkle":"586a6a","Little Boy Blue":"71a9f7","Sage":"d0c88e","Coral":"ff8552"}
             //Shader test_shader = LoadShaderCode(
             //    @"#version 330
@@ -48,8 +46,6 @@ namespace _2021_04_22_Raylib_ImGUI_Tiled_Study
                 BeginDrawing();
 
                 ClearBackground(Color.WHITE);
-
-                S_OBJECT_LIST.DRAW_OBJECTS();
 
                 //BeginShaderMode(test_shader);
                 DrawCircle((int)ball_postion.X, (int)ball_postion.Y, 50, new Color(0x71, 0xa9, 0xf7, 0xff));

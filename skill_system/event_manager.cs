@@ -4,14 +4,14 @@ using System.Numerics;
 
 namespace _2021_04_22_Raylib_ImGUI_Tiled_Study
 {
-    public delegate void event_handler(object sender, EventArgs e);
+    public delegate void event_handler(object sender);
 
     public class event_manager
     {
-        private static event event_handler handled_event;
+        private event event_handler handled_event;
 
         //Make dictionary. 
-        public static void process_events(List<event_handler> event_handlers, List<EventArgs> event_arguments, List<Vector2> event_handler_sections, List<Vector2> event_argument_sections)
+        public event_manager()
         {
             //Finish sectioning placement.
             //for(int i = 0; i < count; i++)
@@ -29,11 +29,21 @@ namespace _2021_04_22_Raylib_ImGUI_Tiled_Study
             //}   
         }
 
-        public void call_handled_event(EventArgs e)  
+        public void add_event_handler(event_handler handler)
+        {
+            handled_event += handler;
+        }
+        
+        public void remove_event_handler(event_handler handler)
+        {
+            handled_event -= handler;
+        }
+
+        public void call_handled_event()  
         {  
             if (handled_event != null)  
             {  
-                handled_event(this, e);  
+                handled_event(this);  
             }  
         }
     }
