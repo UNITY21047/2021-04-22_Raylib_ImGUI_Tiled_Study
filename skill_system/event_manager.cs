@@ -39,7 +39,7 @@ namespace _2021_04_22_Raylib_ImGUI_Tiled_Study
             handled_event -= handler;
         }
 
-        public void call_handled_event()  
+        public void call_handled_event(object sender)  
         {  
             if (handled_event != null)  
             {  
