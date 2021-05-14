@@ -17,7 +17,7 @@ namespace _2021_04_22_Raylib_ImGUI_Tiled_Study
         public List<Vector2> texture_section;
         public Dictionary<Vector2, int> texture_data;
 
-        public void set_entity_properties()
+        public void set_entity_properties(String file_name, String entity_name, float global_position, List)
         {
             entity_manager.insert_entity(this);
         }

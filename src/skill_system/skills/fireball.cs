@@ -4,10 +4,18 @@ using Raylib_cs;
 
 namespace _2021_04_22_Raylib_ImGUI_Tiled_Study
 {
-    public class fireball
+    public class fireball : skill
     {
-        public fireball(int section_position)
+        public fireball()
         {
+            name = "fireball";
+            
+            if (true)
+            {
+                
+            }
+
+            skill_pair = new Vector2();
             skill_operator.load(new event_handler(trigger), skill_sector(), section_position);
         }
 
