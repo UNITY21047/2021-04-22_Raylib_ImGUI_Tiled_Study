@@ -16,13 +16,22 @@ namespace _2021_04_22_Raylib_ImGUI_Tiled_Study
         public static List<Vector2> sections = new List<Vector2>();
         public static List<Vector2> skill_pairs = new List<Vector2>();
 
+        public static void init_event_manager()
+        {
+            event_handlers.Add(null);
+        }
+
         public static void insert_entity(entity data)
         {
             entities.Add(data);
         }
+
         public static void unload_entities()
         {
-
+            for (int i = 0; i < entities.Count; i++)
+            {
+                entities[i].unload();
+            }
         }
         
         public static void load_entities()

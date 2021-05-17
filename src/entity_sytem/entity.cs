@@ -26,6 +26,7 @@ namespace _2021_04_22_Raylib_ImGUI_Tiled_Study
 
         //Function Data
         Texture2D main_texture;
+        Rectangle global_rectangle;
 
 
         ///<summary>
@@ -48,6 +49,7 @@ namespace _2021_04_22_Raylib_ImGUI_Tiled_Study
             this.default_texture = default_texture;
             this.texture_sections = texture_sections;
             this.texture_allocation_data = texture_allocation_data;
+            this.global_rectangle = new Rectangle(this.global_position.X, this.global_position.Y, 64f, 64f);
             entity_manager.insert_entity(this);
         }
 
@@ -60,8 +62,10 @@ namespace _2021_04_22_Raylib_ImGUI_Tiled_Study
                     ellipse();
                 }
             }
-            
-            //TODO:Construct texture drawing.
+            else if(default_texture[new Vector2(0,0)]) //Gets the default position boolean of this pair.
+            {
+                DrawTextureRec(main_texture, global_rectangle, global_position, new Color());
+            }
         }
 
         public void load()
