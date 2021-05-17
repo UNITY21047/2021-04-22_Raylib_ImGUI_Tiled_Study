@@ -1,3 +1,0 @@
-LOAD_OBJECT_DATA:
-
-    
