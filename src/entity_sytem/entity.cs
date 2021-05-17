@@ -18,12 +18,14 @@ namespace _2021_04_22_Raylib_ImGUI_Tiled_Study
         public String skill_name;
         public Vector2 global_position;
         public String shape;
-        public bool use_default_texture;
+        Dictionary<Vector2, bool> default_texture;
         public List<Vector2> texture_sections;
         public Dictionary<Vector2, int> texture_allocation_data;
         public Vector2 skill_pair;
 
         //Function Data
+        Texture2D main_texture;
+
 
         ///<summary>
         ///Sets all known entity properties.
@@ -34,7 +36,7 @@ namespace _2021_04_22_Raylib_ImGUI_Tiled_Study
             String skill_name, 
             Vector2 global_position, 
             String shape, 
-            bool use_default_texture, 
+            Dictionary<Vector2, bool> default_texture,
             List<Vector2> texture_sections, 
             Dictionary<Vector2, int> texture_allocation_data)
         {
@@ -42,7 +44,7 @@ namespace _2021_04_22_Raylib_ImGUI_Tiled_Study
             this.skill_name = skill_name;
             this.global_position = global_position;
             this.shape = shape;
-            this.use_default_texture = use_default_texture;
+            this.default_texture = default_texture;
             this.texture_sections = texture_sections;
             this.texture_allocation_data = texture_allocation_data;
             entity_manager.insert_entity(this);
@@ -50,15 +52,32 @@ namespace _2021_04_22_Raylib_ImGUI_Tiled_Study
 
         public void draw()
         {
+            if(!shape.Equals(String.Empty) && file_name.Equals(String.Empty))
+            {
+
+            }
             
+            //TODO:Construct texture drawing.
         }
 
         public void load()
         {
-            if(!file_name.Equals(String.Empty))
+            if(!file_name.Equals(String.Empty) && shape.Equals(String.Empty))
             {
-                
+                main_texture = LoadTexture(file_name);
             }
+            else if(!skill_name.Equals(String.Empty) && shape.Equals(String.Empty))
+            {
+                if(!file_name.Equals(String.Empty))
+                {
+                    main_texture = LoadTexture(file_name);
+                }
+            }
+        }
+
+        public void unload()
+        {
+            UnloadTexture(main_texture);
         }
     }
 }
