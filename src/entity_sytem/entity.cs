@@ -17,6 +17,7 @@ namespace _2021_04_22_Raylib_ImGUI_Tiled_Study
         public String entity_name;
         public String skill_name;
         public Vector2 global_position;
+        public Rectangle size;
         public String shape;
         Dictionary<Vector2, bool> default_texture;
         public List<Vector2> texture_sections;
@@ -54,7 +55,10 @@ namespace _2021_04_22_Raylib_ImGUI_Tiled_Study
         {
             if(!shape.Equals(String.Empty) && file_name.Equals(String.Empty))
             {
-
+                if(shape.Equals("ellipse"))
+                {
+                    ellipse();
+                }
             }
             
             //TODO:Construct texture drawing.
@@ -78,6 +82,11 @@ namespace _2021_04_22_Raylib_ImGUI_Tiled_Study
         public void unload()
         {
             UnloadTexture(main_texture);
+        }
+
+        public void ellipse()
+        {
+            DrawEllipse((int)global_position.X, (int)global_position.Y , 5, 10, new Color(0x99, 0x99, 0x99, 0xff)); 
         }
     }
 }
