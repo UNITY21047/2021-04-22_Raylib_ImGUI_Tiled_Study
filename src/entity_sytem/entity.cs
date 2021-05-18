@@ -16,18 +16,21 @@ namespace _2021_04_22_Raylib_ImGUI_Tiled_Study
         public String file_name;
         public String entity_name;
         public String skill_name;
-        public Vector2 global_position;
+        public static Vector2 global_position;
         public Rectangle size;
         public String shape;
         Dictionary<Vector2, bool> default_texture;
         public List<Vector2> texture_sections;
         public Dictionary<Vector2, int> texture_allocation_data;
         public Vector2 skill_pair;
+        public int entity_sector_postion;
 
         //Function Data
         Texture2D main_texture;
         Rectangle global_rectangle;
+        public Dictionary<String, Vector2> camera_target;
 
+        //Colors: {"Deep Space Sparkle":"586a6a","Little Boy Blue":"71a9f7","Sage":"d0c88e","Coral":"ff8552"}
 
         ///<summary>
         ///Sets all known entity properties.
@@ -40,31 +43,36 @@ namespace _2021_04_22_Raylib_ImGUI_Tiled_Study
             String shape, 
             Dictionary<Vector2, bool> default_texture,
             List<Vector2> texture_sections, 
-            Dictionary<Vector2, int> texture_allocation_data)
+            Dictionary<Vector2, int> texture_allocation_data,
+            int entity_sector_postion)
         {
             this.file_name = file_name;
             this.skill_name = skill_name;
-            this.global_position = global_position;
+            this.entity_name = entity_name;
+            entity.global_position = global_position;
             this.shape = shape;
             this.default_texture = default_texture;
             this.texture_sections = texture_sections;
             this.texture_allocation_data = texture_allocation_data;
-            this.global_rectangle = new Rectangle(this.global_position.X, this.global_position.Y, 64f, 64f);
-            entity_manager.insert_entity(this);
+            this.global_rectangle = new Rectangle(entity.global_position.X, entity.global_position.Y, 32f, 64f);
+            this.camera_target = new Dictionary<string, Vector2>();
+            this.entity_sector_postion = entity_sector_postion;
+            camera_target.Add(this.entity_name, entity.global_position);
+            entity_manager.insert_entity(this, entity_sector_postion);
         }
 
         public void draw()
         {
-            if(!shape.Equals(String.Empty) && file_name.Equals(String.Empty))
+            if(!shape.Equals(String.Empty))
             {
                 if(shape.Equals("ellipse"))
                 {
-                    ellipse();
+                    player.ellipse();
                 }
             }
             else if(default_texture[new Vector2(0,0)]) //Gets the default position boolean of this pair.
             {
-                DrawTextureRec(main_texture, global_rectangle, global_position, new Color());
+                DrawTextureRec(main_texture, global_rectangle, global_position, new Color(0x71, 0xa9, 0xf7, 0xff));
             }
         }
 
@@ -86,11 +94,6 @@ namespace _2021_04_22_Raylib_ImGUI_Tiled_Study
         public void unload()
         {
             UnloadTexture(main_texture);
-        }
-
-        public void ellipse()
-        {
-            DrawEllipse((int)global_position.X, (int)global_position.Y , 5, 10, new Color(0x99, 0x99, 0x99, 0xff)); 
         }
     }
 }
