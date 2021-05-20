@@ -8,7 +8,7 @@ namespace _2021_04_22_Raylib_ImGUI_Tiled_Study
     {
         public fireball()
         {   
-            entity_manager.insert_skill(new event_handler(trigger), player.player_skill_sector());
+            entity_manager.insert_skill(new event_handler(trigger), player_operations.player_skill_sector());
         }
 
         public void trigger(object sender)

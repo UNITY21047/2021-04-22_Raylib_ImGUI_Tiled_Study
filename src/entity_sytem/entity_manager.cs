@@ -88,9 +88,8 @@ namespace _2021_04_22_Raylib_ImGUI_Tiled_Study
             }
         }
 
-        public static void draw_entities(Vector2 camera_target, float camera_rotation, float camera_zoom)
+        public static void draw_entities(float camera_rotation, float camera_zoom)
         {
-            camera.target = camera_target;
             camera.rotation = camera_rotation;
             camera.zoom = camera_zoom;
             
@@ -113,6 +112,7 @@ namespace _2021_04_22_Raylib_ImGUI_Tiled_Study
             }
             
             EndMode2D();
+
         }
         public static void insert_skill(event_handler event_handle, Vector2 section)
         {
